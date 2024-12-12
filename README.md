@@ -7,7 +7,7 @@
    ```
 2. Create and activate the virtual environment
    ```sh
-   python -m venv venv (select the interpreter to venv)
+   python -m venv venv 
    ```
    - Windows
    ```sh
