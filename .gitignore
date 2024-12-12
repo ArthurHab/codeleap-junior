@@ -1,0 +1,35 @@
+# Ambiente virtual
+venv/
+env/
+
+# Arquivos de configuração sensíveis
+*.env
+
+# Banco de dados SQLite
+db.sqlite3
+
+# Arquivos de migração
+**/migrations/__pycache__/
+**/migrations/*.pyc
+**/migrations/*.pyo
+
+# Arquivos de cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos do IDE
+.vscode/
+.idea/
+
+# Arquivos estáticos e de mídia gerados
+staticfiles/
+media/
+
+# Logs e arquivos temporários
+*.log
+*.pot
+*.pyc
+.DS_Store
+*.swp
+*~
