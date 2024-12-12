@@ -1,8 +1,10 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import PostViewSet
 
-from . import views
+router = DefaultRouter()
+router.register(r'', PostViewSet, basename='post')
 
 urlpatterns = [
-    path('', views.list_and_create, name='list_and_create'),
-    path('<int:id>', views.get_update_delete, name='get_update_delete'),
+    path('', include(router.urls)),  
 ]
